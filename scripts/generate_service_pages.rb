@@ -198,6 +198,18 @@ SERVICES = [
   }
 ].freeze
 
+RELATIONS = {
+  'consulta-pediatrica-general.html' => %w[teleconsulta-pediatrica.html seguimiento-neurodesarrollo-infantil.html preparacion-recien-nacido.html],
+  'asesoria-lactancia-materna.html' => %w[preparacion-recien-nacido.html alimentacion-complementaria.html consulta-pediatrica-general.html],
+  'asesoria-sueno-infantil.html' => %w[consulta-pediatrica-general.html seguimiento-neurodesarrollo-infantil.html conducta-alimentaria-infantil.html],
+  'alimentacion-complementaria.html' => %w[asesoria-lactancia-materna.html conducta-alimentaria-infantil.html consulta-pediatrica-general.html],
+  'conducta-alimentaria-infantil.html' => %w[alimentacion-complementaria.html seguimiento-neurodesarrollo-infantil.html consulta-pediatrica-general.html],
+  'preparacion-recien-nacido.html' => %w[asesoria-lactancia-materna.html consulta-pediatrica-general.html asesoria-sueno-infantil.html],
+  'seguimiento-neurodesarrollo-infantil.html' => %w[consulta-pediatrica-general.html conducta-alimentaria-infantil.html teleconsulta-pediatrica.html],
+  'teleconsulta-pediatrica.html' => %w[consulta-pediatrica-general.html asesoria-lactancia-materna.html consulta-urgencias-pediatricas.html],
+  'consulta-urgencias-pediatricas.html' => %w[consulta-pediatrica-general.html teleconsulta-pediatrica.html preparacion-recien-nacido.html]
+}.freeze
+
 def esc(value)
   CGI.escapeHTML(value.to_s)
 end
@@ -244,6 +256,17 @@ def page(service)
         </button>
         <div id="faq-#{index}" class="faq-answer hidden px-5 pb-5 text-sm leading-relaxed text-slate-text">#{esc(a)}</div>
       </div>
+    HTML
+  end.join
+  related_html = RELATIONS.fetch(service[:slug]).map do |slug|
+    related = SERVICES.find { |candidate| candidate[:slug] == slug }
+    raise "Missing related service: #{slug}" unless related
+    <<~HTML
+      <a href="#{related[:slug]}" class="group block rounded-2xl border border-gray-100 bg-white p-6 hover:border-teal/40 hover:shadow-md transition-all">
+        <p class="font-heading text-xl font-bold text-navy group-hover:text-teal transition-colors">#{esc(related[:name])}</p>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">#{esc(related[:description])}</p>
+        <span class="mt-4 inline-flex text-sm font-bold text-teal">Ver servicio <span aria-hidden="true" class="ml-1">→</span></span>
+      </a>
     HTML
   end.join
 
@@ -308,7 +331,8 @@ def page(service)
           <ol class="lg:col-span-3 grid sm:grid-cols-2 gap-4">#{service[:prepare].map.with_index{|item,i|%(<li class="rounded-2xl bg-white p-5 text-sm leading-relaxed text-slate-600"><span class="block text-teal font-bold mb-2">#{i+1}</span>#{esc(item)}</li>)}.join}</ol>
         </div></section>
         <section class="px-4 py-16 md:py-20 bg-white"><div class="max-w-4xl mx-auto"><p class="text-sm font-bold uppercase tracking-wider text-coral">Alcance y seguridad</p><h2 class="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">Lo que esta consulta no reemplaza</h2><p class="text-lg leading-8 text-slate-600">#{esc(service[:limits])}</p></div></section>
-        <section class="px-4 py-16 md:py-20"><div class="max-w-4xl mx-auto"><p class="text-sm font-bold uppercase tracking-wider text-teal">Respuestas claras</p><h2 class="font-heading text-3xl md:text-4xl font-bold mt-2 mb-8">Preguntas frecuentes</h2><div class="space-y-3">#{faq_html}</div></div></section>
+        <section class="px-4 py-16 md:py-20"><div class="max-w-6xl mx-auto"><div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-8"><div><p class="text-sm font-bold uppercase tracking-wider text-teal">Continúa explorando</p><h2 class="font-heading text-3xl md:text-4xl font-bold mt-2">Servicios relacionados</h2></div><a href="/#servicios" class="text-sm font-bold text-teal hover:text-navy">Ver todos los servicios →</a></div><div class="grid md:grid-cols-3 gap-5">#{related_html}</div></div></section>
+        <section class="px-4 py-16 md:py-20 bg-white"><div class="max-w-4xl mx-auto"><p class="text-sm font-bold uppercase tracking-wider text-teal">Respuestas claras</p><h2 class="font-heading text-3xl md:text-4xl font-bold mt-2 mb-8">Preguntas frecuentes</h2><div class="space-y-3">#{faq_html}</div></div></section>
         <section class="px-4 pb-16"><div class="max-w-4xl mx-auto rounded-2xl border border-teal/20 bg-white p-6"><p class="font-bold mb-2">Fuente para ampliar</p><a href="#{esc(service[:source_url])}" target="_blank" rel="noopener noreferrer" class="text-teal underline">#{esc(service[:source_name])}</a><p class="mt-4 text-xs text-slate-500">Contenido informativo actualizado el <time datetime="#{UPDATED}">12 de julio de 2026</time>. No sustituye una valoración médica individual.</p></div></section>
         <section class="px-4 py-16 bg-navy text-white"><div class="max-w-3xl mx-auto text-center"><h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">¿Quieres saber si este servicio es adecuado?</h2><p class="text-white/75 mb-7">Escribe por WhatsApp para explicar brevemente el motivo y coordinar la modalidad.</p><a href="https://wa.me/#{PHONE}?text=#{wa_text}" target="_blank" rel="noopener noreferrer" class="inline-block rounded-full bg-coral px-8 py-4 font-bold">Consultar disponibilidad</a></div></section>
       </main>
