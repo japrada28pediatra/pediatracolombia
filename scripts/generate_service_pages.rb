@@ -213,7 +213,8 @@ def page(service)
     'mainEntity' => service[:faqs].map { |q, a| {'@type'=>'Question','name'=>q,'acceptedAnswer'=>{'@type'=>'Answer','text'=>a}} }
   }
   service_schema = {
-    '@context'=>'https://schema.org','@type'=>'MedicalService','@id'=>"#{canonical}#service",'name'=>service[:name],
+    '@context'=>'https://schema.org','@type'=>'Service','@id'=>"#{canonical}#service",'name'=>service[:name],
+    'serviceType'=>service[:name],
     'url'=>canonical,'description'=>service[:description],'medicalSpecialty'=>'Pediatrics',
     'provider'=>{'@type'=>'Physician','name'=>'Dra. Jazmín Prada','telephone'=>'+573187022574','sameAs'=>['https://www.instagram.com/drajazminpradapediatra']},
     'areaServed'=>[{'@type'=>'Country','name'=>'Colombia'},{'@type'=>'Place','name'=>'Familias hispanohablantes en el exterior'}],
