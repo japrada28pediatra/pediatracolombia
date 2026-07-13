@@ -156,6 +156,7 @@ SERVICES = [
   {
     slug: 'teleconsulta-pediatrica.html',
     name: 'Teleconsulta Pediátrica',
+    price: 120_000,
     title: 'Teleconsulta Pediátrica | Consulta Online en Español',
     description: 'Teleconsulta pediátrica en español para seguimiento, orientación, lactancia, alimentación, sueño, desarrollo y segunda opinión, desde Colombia o el exterior.',
     eyebrow: 'Orientación pediátrica sin importar la distancia',
@@ -171,6 +172,7 @@ SERVICES = [
       ['¿Qué necesito para conectarme?', 'Un teléfono o computador con cámara, conexión estable, buena iluminación y un espacio donde puedas hablar con privacidad.'],
       ['¿Mi hijo debe estar presente?', 'Generalmente sí, cuando sea posible y seguro. En algunas consultas de preparación o conversación inicial puede acordarse otra dinámica.'],
       ['¿Se pueden formular medicamentos?', 'Depende de la valoración clínica, la información disponible y las normas aplicables. No toda consulta virtual termina en una prescripción.'],
+      ['¿Cuál es el valor de la consulta online?', 'La consulta pediátrica online tiene un valor de $120.000 COP. Si la familia se encuentra fuera de Colombia, puede confirmar el medio de pago y la conversión aplicable al momento de agendar.'],
       ['¿Cómo sé si necesito consulta presencial?', 'Durante la valoración se explican los límites encontrados. Si hay señales de alarma o se requiere examen físico, se recomendará atención presencial.']
     ]
   },
@@ -232,6 +234,12 @@ def page(service)
     'areaServed'=>[{'@type'=>'Country','name'=>'Colombia'},{'@type'=>'Place','name'=>'Familias hispanohablantes en el exterior'}],
     'availableChannel'=>{'@type'=>'ServiceChannel','serviceUrl'=>canonical,'servicePhone'=>'+573187022574'}
   }
+  if service[:price]
+    service_schema['offers'] = {
+      '@type'=>'Offer', 'price'=>service[:price].to_s, 'priceCurrency'=>'COP',
+      'availability'=>'https://schema.org/InStock', 'url'=>canonical
+    }
+  end
   breadcrumb_schema = {'@context'=>'https://schema.org','@type'=>'BreadcrumbList','itemListElement'=>[
     {'@type'=>'ListItem','position'=>1,'name'=>'Pediatra Colombia','item'=>"#{BASE}/"},
     {'@type'=>'ListItem','position'=>2,'name'=>'Servicios pediátricos','item'=>"#{BASE}/#servicios"},
@@ -248,6 +256,7 @@ def page(service)
       <p class="text-sm leading-relaxed text-slate-text">#{esc(service[:alert])}</p>
     </div>
   HTML
+  price_badge = service[:price] ? %(<p class="mt-6 inline-flex rounded-full border border-teal/20 bg-white px-5 py-2 text-lg font-bold text-navy">Consulta online · $#{service[:price].to_s.reverse.scan(/.{1,3}/).join('.').reverse} COP</p>) : ''
   faq_html = service[:faqs].map.with_index do |(q, a), index|
     <<~HTML
       <div class="faq-item rounded-xl border border-gray-200 bg-white overflow-hidden">
@@ -317,6 +326,7 @@ def page(service)
             <p class="text-sm font-bold uppercase tracking-widest text-teal">#{esc(service[:eyebrow])}</p>
             <h1 class="font-heading text-4xl md:text-6xl font-bold mt-4 mb-6">#{esc(service[:name])}</h1>
             <p class="mx-auto max-w-3xl text-lg md:text-xl leading-relaxed text-slate-600">#{esc(service[:lead])}</p>
+            #{price_badge}
             #{alert}
             <div class="mt-8 flex flex-wrap justify-center gap-3"><a href="https://wa.me/#{PHONE}?text=#{wa_text}" target="_blank" rel="noopener noreferrer" class="rounded-full bg-coral px-7 py-3.5 font-bold text-white shadow-lg">Consultar por WhatsApp</a><a href="#como-funciona" class="rounded-full border border-teal/30 bg-white px-7 py-3.5 font-bold text-teal">Conocer el servicio</a></div>
           </div>
