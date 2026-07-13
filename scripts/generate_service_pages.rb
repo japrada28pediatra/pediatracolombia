@@ -158,7 +158,7 @@ SERVICES = [
     name: 'Teleconsulta Pediátrica',
     price: 120_000,
     title: 'Teleconsulta Pediátrica | Consulta Online en Español',
-    description: 'Teleconsulta pediátrica en español para seguimiento, orientación, lactancia, alimentación, sueño, desarrollo y segunda opinión, desde Colombia o el exterior.',
+    description: 'Teleconsulta pediátrica en español para seguimiento, lactancia, alimentación, sueño, desarrollo y segunda opinión. Valor: $120.000 COP.',
     eyebrow: 'Orientación pediátrica sin importar la distancia',
     lead: 'Una consulta por videollamada para revisar información, observar lo que sea posible a distancia y definir con claridad qué puede resolverse virtualmente y qué necesita atención presencial.',
     intro: 'La teleconsulta es una modalidad clínica, no solo una llamada. Requiere identificar al paciente, comprender el motivo, revisar antecedentes, proteger la privacidad y reconocer los límites del examen a distancia.',
