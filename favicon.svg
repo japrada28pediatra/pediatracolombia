@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Pediatra Colombia</title>
+  <rect width="64" height="64" rx="14" fill="#0f766e"/>
+  <path d="M17 20c0-5 4-9 9-9s9 4 9 9v5c0 7-5 12-12 12h-1c-7 0-12-5-12-12v-5h7v5c0 3 2 5 5 5h1c3 0 5-2 5-5v-5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 20h8c5 0 9 4 9 9s-4 9-9 9h-8M43 38v7c0 5-4 9-9 9" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="34" cy="54" r="3" fill="#e76f51"/>
+</svg>
