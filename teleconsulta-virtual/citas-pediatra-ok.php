@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</li>
 
 						<li class="relative p-1.25 ps-3 text-base before:text-primary before:top-2">
-							<a href="https://wa.me/573187022574?text=Hola%20me%20gustaria%20programar%20una%20cita" target="_blank"
+							<a href="https://wa.me/573180435023?text=Hola%20me%20gustaria%20programar%20una%20cita" target="_blank"
 								class="text-body">
 								<i class="fa-brands fa-whatsapp"></i> +57 31 8702 2574
 							</a>
@@ -265,7 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 infantil con atención inmediata en nuestro consultorio o en la comodidad de tu hogar
                                                 en toda la ciudad.
 											</p>
-											<a href="https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank"
+											<a href="https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank"
 												class="btn btn-primary btn-rounded btn-hover1 wow fadeInUp"
 												data-wow-delay="0.6s" data-wow-duration="0.8s"
 												style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
@@ -276,7 +276,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<p class="text-white lg:text-xl text1  sm:text-lg text-base mb-7.5   mt-7.5 font-light">
 											Gracias por tu consulta, te invitamos a escribirnos por whatsapp
 											</p>
-											<a href="https://wa.me/573187022574?text=Hola%20me%20gustaria%20programar%20una%20cita"
+											<a href="https://wa.me/573180435023?text=Hola%20me%20gustaria%20programar%20una%20cita"
 												class="btn btn-primary btn-rounded btn-hover1 wow fadeInUp"
 												data-wow-delay="0.6s" data-wow-duration="0.8s"
 												style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
@@ -355,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										</div>
 									</div>
 									<div class="container text-center">
-									    	<a href="https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
+									    	<a href="https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
 													Agendar Cita por WhatsApp <i class="feather icon-arrow-right"></i>
 												</a>
 									</div>
@@ -386,7 +386,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											
 												<h3 class="xl:text-2xl text-xl mb-2.5">Urgencia Leve (Fiebre, Gripa)</h3>
 												<p class="text-2sm">Atención rápida para síntomas agudos, evitando las horas de espera en urgencias.</p>
-													<a href="https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada"  target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
+													<a href="https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada"  target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
 													Agendar Cita por WhatsApp <i class="feather icon-arrow-right"></i>
 												</a>
 											</div>
@@ -401,7 +401,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												
 												<h3 class="xl:text-2xl text-xl mb-2.5">Crecimiento y Desarrollo</h3>
 												<p class="text-2sm">Control profundo de peso, talla y metas madurativas según la edad.</p>
-													<a href="https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
+													<a href="https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
 													Agendar Cita por WhatsApp <i class="feather icon-arrow-right"></i>
 												</a>
 											</div>
@@ -416,7 +416,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												
 												<h3 class="xl:text-2xl text-xl mb-2.5">Recién Nacidos</h3>
 												<p class="text-2sm">Acompañamiento integral en los primeros días en casa y asesoría profesional en lactancia.</p>
-												<a href="https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
+												<a href="https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada" target="_blank" class="text-2sm font-medium  btn btn-lg btn-icon btn-primary">
 													Agendar Cita por WhatsApp <i class="feather icon-arrow-right"></i>
 												</a>
 											</div>
@@ -536,7 +536,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 
 		<div class="text-center mt-10">
-			<a href="https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20quiero%20agendar%20una%20cita" target="_blank"
+			<a href="https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20quiero%20agendar%20una%20cita" target="_blank"
 				class="btn btn-primary btn-rounded">
 				Agendar cita ahora
 			</a>
@@ -584,7 +584,7 @@ Me caracterizo por brindar una atención cercana, humana y basada en la evidenci
 
 									<div class="flex flex-wrap items-center wow fadeInUp" data-wow-delay="0.8s"
 										data-wow-duration="0.8s">
-									<a href="https://wa.me/573187022574?text=Hola%20me%20gustaria%20programar%20una%20cita" target="_blank"
+									<a href="https://wa.me/573180435023?text=Hola%20me%20gustaria%20programar%20una%20cita" target="_blank"
 												class="btn btn-primary btn-rounded btn-hover1 wow fadeInUp"
 												data-wow-delay="0.6s" data-wow-duration="0.8s"
 												style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
@@ -927,7 +927,7 @@ sin afanes</p>
 											Growth and Development Monitoring</li>
 									</ul>
 
-									<a href="https://wa.me/573187022574?text=Hola%20me%20gustaria%20programar%20una%20cita"
+									<a href="https://wa.me/573180435023?text=Hola%20me%20gustaria%20programar%20una%20cita"
 										class="btn btn-primary btn-rounded btn-hover1 wow fadeInUp"
 										data-wow-delay="0.6s" data-wow-duration="0.8s"
 										style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
@@ -1003,7 +1003,7 @@ sin afanes</p>
 										</ul>
 										<div class="flex flex-wrap items-center wow fadeInUp" data-wow-delay="0.6s"
 											data-wow-duration="0.8s">
-											<a href="https://wa.me/573187022574?text=Hola%20me%20gustaria%20programar%20una%20cita"
+											<a href="https://wa.me/573180435023?text=Hola%20me%20gustaria%20programar%20una%20cita"
 												class="btn btn-primary btn-rounded btn-hover1 mr-10 mb-4 xl:mb-0 wow fadeInUp">
 												Appointment
 												<i class="feather icon-arrow-right ms-2"></i>
@@ -1926,8 +1926,8 @@ sin afanes</p>
 												<h5 class="lg:text-lg text-base font-medium text-white mb-1.25">
 													LLamenos
 												</h5>
-												<p class="text-2sm font-light mb-0"><a href="tel:+573187022574">
-														+573187022574</a></p>
+												<p class="text-2sm font-light mb-0"><a href="tel:+573180435023">
+														+573180435023</a></p>
 											</div>
 										</div>
 									</div>
@@ -2004,7 +2004,7 @@ sin afanes</p>
 		</div>
 	<!-- WhatsApp Floating Button -->
 <a
-  href="https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada"
+  href="https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20me%20gustaria%20agendar%20una%20cita%20Dra%20Prada"
   class="whatsapp-float"
   target="_blank"
   rel="noopener noreferrer"
